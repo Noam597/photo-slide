@@ -1,0 +1,143 @@
+.page{
+    /* position: relative; */
+    margin: 0;
+ 
+}
+
+
+
+.imageHolder img{
+    width: 100%;
+}
+.imagesContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    margin: auto;
+}
+
+/* .brochure{
+    border: solid 1px black;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 5px 5px 2.5px grey ;
+    
+} 
+.brochure:hover{
+transition-duration: 0.5s;
+transform: scale(1.08);
+}
+.brochure img{
+    width: 100%;
+    height: 70%;
+} */
+.cover{
+   position: absolute;
+    display: flex;
+    justify-content: center;
+     width: 100%;
+   height: 100%;
+    background-color: #00000080;
+    
+}
+.hidePicture{
+    visibility: hidden;
+    
+}
+.hidePicture button{
+    display: none;
+    
+}
+.hidePicture img{
+    display: none;
+    
+}
+.bigPicture{
+    position: absolute;
+    width: 900px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    margin: 10px;
+     background-repeat: no-repeat;
+    background-image:linear-gradient(to bottom right,#4040c5,silver,#b0ddec);
+    border-radius: 3px;
+    opacity: 1;
+    
+}
+
+.bigPicture .exit{
+    position: absolute;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    background-color: inherit;
+    opacity: 1;
+
+}
+.bigPicture .exit:hover{
+    color: rgb(189, 184, 184);
+}
+.bigPicture .exit i{
+   font-size: 20px;
+    
+   
+}
+.bigPicture p{
+    margin: 20px;
+}
+
+
+.bigPicture img{
+  margin: 0;
+   padding: 20px;
+    width: 850px;
+    height: 600px;
+    border-radius: 7px;
+    object-fit: cover;
+    opacity: 1;
+    animation-name: title;
+    animation-duration: 3s;
+    
+}
+@keyframes title{
+    0%{opacity: 0;}
+    /* 25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;} */
+    100%{opacity: 1;}
+  }
+
+
+.leftButton{
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    font-size: 20px;
+    padding: 3px;
+    width: 50px;
+    height:50px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+.rightButton{
+    position: absolute;
+    top: 30%;
+    left: 83%;
+    font-size: 20px;
+    padding: 3px;
+    width: 50px;
+    height:50px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
